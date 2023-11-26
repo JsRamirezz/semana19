@@ -1,0 +1,6 @@
+<h2>Registrar Proveedor</h2>
+  <form method="post" action="{% url 'registrar_proveedor' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Registrar</button>
+  </form>
